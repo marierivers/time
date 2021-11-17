@@ -47,3 +47,5 @@ d_times %>%
   formatRound(columns=c('duration'), digits=3)
 ```
 
+Adding some lines for git lab to reference an issue # in a git message
+
