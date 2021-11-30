@@ -48,7 +48,7 @@ d_times <- d_times %>%
 # plot ALL
 plot_burndown(
   d_times,
-  beg = as.Date("2021-10-31"), # day before
+  beg = as.Date("2021-10-25"), # day before
   end = as.Date("2021-11-21"), # day after
   hrs = 20)
 # table ALL
@@ -61,8 +61,8 @@ d_task <- d_times %>%
   filter(task_name == !!task)
 plot_burndown(
   d_task,
-  beg = as.Date("2021-10-31"), # day before
-  end = as.Date("2021-11-08"), # day after
+  beg = as.Date("2021-10-25"), # day before
+  end = as.Date("2021-10-31"), # day after
   hrs = 3)
 datatable(d_task)
 ```
@@ -73,8 +73,8 @@ d_task <- d_times %>%
   filter(task_name == !!task)
 plot_burndown(
   d_task,
-  beg = as.Date("2021-10-31"), # day before
-  end = as.Date("2021-11-07"), # day after
+  beg = as.Date("2021-10-28"), # day before
+  end = as.Date("2021-11-04"), # day after
   hrs = 4)
 datatable(d_task)
 ```
@@ -109,8 +109,8 @@ d_task <- d_times %>%
   filter(task_name == !!task)
 plot_burndown(
   d_task,
-  beg = as.Date("2021-10-31"), # day before
-  end = as.Date("2021-11-07"), # day after
+  beg = as.Date("2021-10-10"), # day before
+  end = as.Date("2021-11-29"), # day after
   hrs = 5)
 datatable(d_task)
 ```
@@ -122,7 +122,7 @@ d_task <- d_times %>%
 plot_burndown(
   d_task,
   beg = as.Date("2021-10-31"), # day before
-  end = as.Date("2021-11-07"), # day after
+  end = as.Date("2021-11-29"), # day after
   hrs = 3)
 datatable(d_task)
 ```
